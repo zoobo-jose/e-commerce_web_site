@@ -41,7 +41,7 @@ body{
 /* logo start */
 
 .logo{
-    width: 50px;
+    width: 45px;
 }
 
 /* header start */
@@ -51,9 +51,12 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding:20px 80px;
-    background-color: #f7eeff;
+    padding:15px 80px;
+    background-color: #c1c5c4;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.062);
+    position: sticky;
+    top:0;
+    z-index: 999;
 }
 #navbar{
     display:flex;
@@ -69,9 +72,171 @@ body{
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    color:#1a1a1a;
+    color:#7c7c7c;
     transition: 0.3s ease;
+    position: relative;
 }
-#navbar li a:hover{
-    color:rgb(0, 153, 255);
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(6, 156, 161);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 40%;
+    height: 2px;
+    background-color:rgb(6, 156, 161);
+    position: absolute;
+    left: 0px;
+    bottom:-4px;
+}
+
+/* home page start */
+
+#hero{
+    background-image: url("assets/img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 90vh;
+    padding:40px 0 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#hero h4{
+    padding-bottom: 14px;
+}
+#hero h1{
+    color:rgb(5, 139, 106);
+}
+#hero button{
+    background-image: url("assets/img/btn.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:none;
+    padding: 30px 30px;
+    background-color: transparent;
+    color:#3a8160;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+#hero button:hover{
+    transform: scale(1.02);
+}
+#feature{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#feature .fe-box{
+    width:160px;
+    text-align: center;
+    padding: 25px 15px ;
+    box-shadow: 20px 20px 14px rgba(0, 0, 0, 0.082);
+    border:solid 1px #cce7d0;
+    border-radius: 4px;
+    margin:15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.192);
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding:5px 6px 7px 6px;
+    line-height: 1em;
+    border-radius: 4px;
+    color:rgb(41, 139, 86);
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #f1fddd;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #ddecfd;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #fdf6dd;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f4ddfd;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fcddfd;
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 20px;
+}
+#product1 .pro{
+    width: 23%;
+    min-height: 250px;
+    padding: 10px 12px;
+    border: solid 1px rgba(0, 0, 0, 0.068);
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.021);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.13);
+}
+#product1 .pro img{
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    padding: 10px;
+    border-radius: 10px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color:#606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color:#1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color:rgb(250, 202, 45);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:#3a8160;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #edf8c7;
+    font-weight: 500;
+    color:#06815a;
+    border:solid 1px #cce7d0 ;
+    position: absolute;
+    bottom:20px;
+    right: 10px;
 }
