@@ -34,6 +34,20 @@ p{
 .section-m1{
     margin: 40px 0 ;
 }
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding:15px 30px;
+    color:black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
 body{
     width: 100%;
 }
@@ -239,4 +253,36 @@ body{
     position: absolute;
     bottom:20px;
     right: 10px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("assets/img/banner/6.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+#banner h4{
+    color:white;
+    font-size: 16px;
+}
+
+
+#banner h2{
+    color:white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color:red;
+}
+#banner button:hover{
+    background-color: #06815a;
+    color:white;
 }
