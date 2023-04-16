@@ -119,10 +119,10 @@ body{
 /* home page start */
 
 #hero{
-    background-image: url("assets/img/bg10.png");
-    background-size: contain;
+    background-image: url("assets/img/bg1.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position:right;
+    background-position:center;
     width:100%;
     height: 90vh;
     padding:40px 0 80px 80px;
@@ -216,7 +216,7 @@ body{
     padding: 10px 12px;
     border: solid 1px rgba(0, 0, 0, 0.068);
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.021);
     margin: 15px 0;
     transition: 0.2s ease;
@@ -229,7 +229,7 @@ body{
     width: 100%;
     background-color: rgb(228, 228, 228);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 #product1 .pro .des{
     text-align: start;
@@ -362,6 +362,12 @@ body{
     padding: 20px;
     margin-bottom: 20px;
 }
+#banner3 .banner-box:nth-child(2){
+    background-image: url("assets/img/banner/7.jpg");
+}
+#banner3 .banner-box:nth-child(3){
+    background-image: url("assets/img/banner/10.jpg");
+}
 #banner3 h2{
     color:white;
     font-size: 20px;
@@ -420,3 +426,73 @@ body{
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
 }
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .col img{
+   max-width: 200px;
+}
+footer .logo{
+    margin-bottom: 30px;
+    width: 60px;
+ }
+ 
+ footer h4{
+    font-size: 14px;
+    margin-bottom: 20px;
+ }
+
+ footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+ }
+ 
+ footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom: 10px;
+ }
+
+ footer .follow{
+    margin-top: 20px;
+ }
+
+ footer .follow{
+    margin-top: 20px;
+ }
+
+ footer .follow i{
+    color:#456b52;
+    padding-right: 4px;
+    cursor:pointer;
+ }
+
+ footer .follow i:hover,footer a:hover{
+    color:#088178;
+ }
+
+ footer .install .row img{
+    border:solid 1px #088178;
+    border-radius: 6px;
+    max-width: 105px;
+ }
+
+ footer .install img{
+    margin:10px 0 15px 0;
+ }
+
+ footer .copyrigth{
+    width:100%;
+    text-align: center;
+ }
