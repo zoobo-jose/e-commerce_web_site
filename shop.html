@@ -47,7 +47,7 @@
         <h2>#stayhome</h2>
         <p>Save more with couponsand upto 70% off!</p>
     </section>
-    
+
     <!--feature section -->
     <section id="product1" class="section-p1">
         <div class="pro-container">
@@ -401,6 +401,14 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const products=document.getElementsByClassName('pro');
+        for(var i=0;i<products.length;i++){
+            products[i].onclick=function(){
+                window.location.href='single_product.html';
+            }
+        }
+    </script>
 </body>
 
 </html>
