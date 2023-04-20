@@ -724,10 +724,30 @@ footer .copyrigth {
     padding: 40px 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 #page-header h2,#page-header p{
     color:black;
+}
+
+#pagination{
+    text-align: center;
+}
+
+
+#pagination a{
+    text-decoration: none;
+    color:white;
+    background-color: #06815a;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px;
 }
 
 /* ================================================ */
