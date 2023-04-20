@@ -42,21 +42,23 @@
         </div>
     </section>
 
+    <!--product details section -->
     <section id="prodetails" class="section-p1">
+
         <div class="single-pro-image">
-            <img src="assets/img/product/1.png" id="MainImg" alt="">
+            <img src="assets/img/product/9.png" id="MainImg" alt="">
             <div class="small-img-group">
                 <div class="small-img-color">
-                    <img src="assets/img/product/2.png" alt="">
+                    <img  class="small-img" src="assets/img/product/6.png" alt="" onclick="change_MainImg(this)">
                 </div>
                 <div class="small-img-color">
-                    <img src="assets/img/product/3.png" alt="">
+                    <img  class="small-img" src="assets/img/product/1.png" alt="" onclick="change_MainImg(this)">
                 </div>
                 <div class="small-img-color">
-                    <img src="assets/img/product/4.png" alt="">
+                    <img  class="small-img" src="assets/img/product/8.png" alt="" onclick="change_MainImg(this)">
                 </div>
                 <div class="small-img-color">
-                    <img src="assets/img/product/5.png" alt="">
+                    <img  class="small-img" src="assets/img/product/9.png" alt="" onclick="change_MainImg(this)">
                 </div>
             </div>
         </div>
@@ -82,8 +84,10 @@
                 Size Custom Men's T-shirts
             </span>
         </div>
+
     </section>
-    <!--product section -->
+
+    <!--features section -->
     <section id="product1" class="section-p1">
         <h2> Features products </h2>
         <p>summer collection New Modern design</p>
@@ -158,6 +162,7 @@
             </div>
         </div>
     </section>
+
     <!--newsletter section -->
     <section id="newsletter" class="section-p1  section-m1">
         <div class="newstext">
@@ -222,8 +227,13 @@
         </div>
 
     </footer>
-
     <script src="script.js"></script>
+    <script>
+        const mainImg=document.getElementById('MainImg');
+        function change_MainImg(smalling){
+            mainImg.src=smalling.src;
+        }
+    </script>
 </body>
 
 </html>

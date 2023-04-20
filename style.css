@@ -781,6 +781,10 @@ footer .copyrigth {
     flex-basis: 24.5%;
     cursor:pointer;
 }
+#prodetails .small-img-color:hover img{
+    background-color: #d6d6d6;
+}
+
 #prodetails .single-pro-details{
     width: 50%;
     padding-top: 30px;
