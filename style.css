@@ -930,6 +930,19 @@ footer .copyrigth {
         margin-bottom: 20px;
     }
 }
+
+/* about page */
+
+#page-header.about-header{
+    background-image: url('assets/img/banner/2.jpg');
+}
+#page-header.about-header h2,#page-header.about-header p{
+    color:rgb(255, 255, 255);
+}
+#page-header.about-header p{
+    text-align: center;
+    line-height: 22px;
+}
 /* ================================================ */
 
 /*start media queries*/
