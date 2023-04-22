@@ -835,6 +835,50 @@ footer .copyrigth {
 
 /* blog page */
 
+#page-header.blog-header{
+    background-image: url('assets/img/banner/10.jpg');
+}
+#page-header.blog-header h2,#page-header.blog-header p{
+    color:white;
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#blog .box-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog .box-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog-details a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color:black;
+    position: relative;
+}
+#blog .blog-details a::after{
+    content:"";
+    width: 60px;
+    height: 1px;
+    background-color: black;
+    position:absolute;
+    top:8px;
+    right: -65px;
+}
 
 /* ================================================ */
 
