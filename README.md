@@ -11,4 +11,5 @@ interessant:
 - la police parcing de google (so beautifull)
 - padding pour avoir de plus belles vues
 - color-scheme pour s'adapter au mode couleur du navigateur (ligth-dark)
+- marquee pour le defilement d'element (drop : depracated by HTML5)
 
