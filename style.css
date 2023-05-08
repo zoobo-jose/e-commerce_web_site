@@ -1139,7 +1139,16 @@ footer .copyrigth {
 
 
 /* cart page */
-
+#page-header.cart-header{
+    background-image: url('assets/img/banner/5.jpg');
+}
+#page-header.cart-header h2,
+#page-header.cart-header p{
+    color:white;
+}
+#cart{
+    overflow: auto;
+}
 #cart table{
     width: 100%;
     border-collapse: collapse;
@@ -1188,6 +1197,57 @@ footer .copyrigth {
 }
 #cart table tbody td{
     font-size: 13px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon{
+    width:50%;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline:none;
+    width:60%;
+    margin-right: 10px;
+    border:solid 1px rgb(214, 214, 214)
+}
+#coupon button,
+#subtotal button{
+    background-color:#088178;
+    color:white;
+    padding: 12px 20px;
+}
+#subtotal{
+    width:50%;
+    border:solid 1px rgb(212, 212, 212);
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width:100%;
+    margin-bottom: 20px;
+    table-layout:fixed
+}
+#subtotal table td{
+    border:solid 1px rgb(206, 205, 205);
+    padding: 10px;
+    font-size:13px;
+}
+@media (max-width:676px) {
+    #coupon,#subtotal {
+        width: 100%;
+    }
+    
 }
 /* ================================================ */
 
